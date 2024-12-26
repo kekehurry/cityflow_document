@@ -8,17 +8,18 @@ title: Introduction
 
 CityFlow is a versatile tool that allows users to design, evaluate, and visualize urban solutions through an llm-integrated, case-based system. Leveraging Python and JavaScript modules, CityFlow empowers urban analysts, city planners, and researchers to address real-world city challenges by creating customized workflows for urban problem-solving.
 
-### A low-code tool for urban analyst
+### A Low-code Tool for Urban Analyst
 
 CityFlow provides a low-code environment that enables urban analysts to develop and test city models with minimal coding effort.
 ![low code](assets/low_code.gif)
 
-### An AI coder for module builder
+### An AI Coder for Module Builder
 
 CityFlow incorporates an AI-powered module builder that assists users in coding custom Python and JavaScript modules. Through natural language inputs, the system helps generate and optimize code, making it easier for users to create complex workflows and solutions for urban problems without extensive programming knowledge.
 ![ai coder](assets/ai_coder.gif)
 
-### A Research Community For City Science
+### An Open Platform for Urban Scientists
 
-CityFlow fosters a collaborative research community where experts, city planners, and urban scientists can share findings, workflows, and case studies. By contributing to an evolving database of urban design solutions, users help drive innovation in city science, enabling others to replicate or adapt successful approaches to urban development.
+CityFlow integrates AI-powered search engines into urban workflows, creating a platform that fosters collaboration among experts, city planners, and urban scientists. It enables users to search for and share research findings, workflows, and case studies, contributing to a continuously evolving database of urban design solutions. By facilitating the exchange of knowledge and best practices, CityFlow drives innovation in urban development, making it easier to replicate or adapt successful approaches for more effective city planning and management.
+
 ![community](assets/community.gif)
