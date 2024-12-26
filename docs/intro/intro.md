@@ -2,6 +2,7 @@
 slug: /
 sidebar_position: 1
 title: Introduction
+author: kaihu
 ---
 
 # CityFlow
@@ -23,3 +24,13 @@ CityFlow incorporates an AI-powered module builder that assists users in coding 
 CityFlow integrates AI-powered search engines into urban workflows, creating a platform that fosters collaboration among experts, city planners, and urban scientists. It enables users to search for and share research findings, workflows, and case studies, contributing to a continuously evolving database of urban design solutions. By facilitating the exchange of knowledge and best practices, CityFlow drives innovation in urban development, making it easier to replicate or adapt successful approaches for more effective city planning and management.
 
 ![community](assets/community.gif)
+
+
+
+
+# Acknowledgement
+
+CityFlow was first conceptualized and developed during my visiting period at MIT. I sincerely thank MIT City Science for their support and inspiration during my work on the CityFlow Platform. I’m also deeply grateful to my supervisor at SCUT Design Future Lab for their guidance and encouragement throughout this journey.
+
+![cityscience](assets/CSxDFL.png)
+

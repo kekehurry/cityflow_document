@@ -37,6 +37,16 @@ module.exports = {
         src: 'img/cflogo_black_100x100.png',
         href: 'https://cityflow.cn',
       },
+      logo: {
+        alt: 'Logo',
+        src: 'img/cflogo_black_100x100.png',
+        href: 'https://cityflow.cn',
+      },
+      logo: {
+        alt: 'Logo',
+        src: 'img/cflogo_black_100x100.png',
+        href: 'https://cityflow.cn',
+      },
       copyright: `CityFlow, Kai Hu, ${new Date().getFullYear()}`,
     },
   },
