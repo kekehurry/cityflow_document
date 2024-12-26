@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Cityflow',
   tagline: 'Workflows for City Sciences',
-  url: 'https://cityflow.media.mit.edu',
+  url: 'https://cityflow.cn',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -19,14 +19,14 @@ module.exports = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'documents',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documents',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://cityflow.cn',
+          label: 'CityFlow Platform',
           position: 'right',
         },
       ],
@@ -34,10 +34,10 @@ module.exports = {
     footer: {
       logo: {
         alt: 'Logo',
-        src: 'img/cflogo.png',
-        href: '/',
+        src: 'img/cflogo_black_100x100.png',
+        href: 'https://cityflow.cn',
       },
-      copyright: `CityFlow, Kai Hu ${new Date().getFullYear()}`,
+      copyright: `CityFlow, Kai Hu, ${new Date().getFullYear()}`,
     },
   },
   presets: [
@@ -47,6 +47,8 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
           // editUrl: '/',
         },
         blog: {
@@ -63,8 +65,19 @@ module.exports = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
       },
     ],
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
+      crossorigin: 'anonymous',
+    },
   ],
 };
