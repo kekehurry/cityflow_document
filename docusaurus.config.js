@@ -29,6 +29,11 @@ module.exports = {
           label: 'CityFlow Platform',
           position: 'right',
         },
+        {
+          href: 'https://arhukai.com',
+          label: 'Contact',
+          position: 'right',
+        },
       ],
     },
     footer: {
