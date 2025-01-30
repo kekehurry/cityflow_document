@@ -40,7 +40,7 @@ Services supporting the Openai API format can be used on the CityFlow platform. 
 - 登录后创建API密钥
 - 复制生成的密钥
 - 在Cityflow工作流界面，`INIT ENVIRONMENT` 下方的 `Advanced Settings` 下拉菜单中粘贴复制的密钥。注意：所有的密钥都只会保存在浏览器本地的 `localStorage`中。
-- 点击主界面下方的`ASSISTANT`标签，然后点击聊天界面右上方的菜单按钮，进入大语言模型助手设置界面，配置好`base_url` 和 `model`。以DeepSeek为例，这里`base_url`填入`x`, `model`填入`deepseek-chat`。 如其他模型则修改为对应链接和模型名称。在全局助手设置的`base_url`和`model`会与其他助手共享，以避免重复设置，但是支持其他助手单独修改。
+- 点击主界面下方的`ASSISTANT`标签，然后点击聊天界面右上方的菜单按钮，进入大语言模型助手设置界面，配置好`base_url` 和 `model`。以DeepSeek为例，这里`base_url`填入`https://api.deepseek.com`, `model`填入`deepseek-chat`。 如其他模型则修改为对应链接和模型名称。在全局助手设置的`base_url`和`model`会与其他助手共享，以避免重复设置，但是支持其他助手单独修改。
 
 After completing the setup, you can use the large language model assistant to assist in completing tasks.
 
