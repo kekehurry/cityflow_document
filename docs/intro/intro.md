@@ -33,12 +33,7 @@ CityFlow integrates AI-powered search engines into urban workflows, creating a p
 ## Quick Start with Docker 🐳
 
 ```
-docker run -d \
-    --name cityflow_platform \
-    -p 3000:3000 \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v ${PWD}/temp:/cityflow_platform/cityflow_executor/code \
-    ghcr.io/kekehurry/cityflow_platform:latest
+docker run -d --name cityflow_platform -p 3000:3000 -v //var/run/docker.sock:/var/run/docker.sock -v ${PWD}/temp:/cityflow_platform/cityflow_executor/code ghcr.io/kekehurry/cityflow_platform:latest
 ```
 
 Cityflow plaform relies on [cityflow_runner](https://github.com/kekehurry/cityflow_runner.git) to execute python and react modules. The docker container will automatically pull the latest cityflow_runner image. You can also pull it manually before the init process:
