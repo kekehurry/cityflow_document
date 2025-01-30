@@ -11,7 +11,7 @@ CityFlow is a low-code, AI-enhanced platform designed to help urban analysts, ci
 
 CityFlow 是一个低代码、AI辅助的城市设计平台，旨在帮助城市分析师、城市规划者和研究人员以最少的编码工作开发、评估和可视化城市解决方案。通过集成AI驱动的模块构建器和基于案例的协作系统，CityFlow 使用户能够创建自定义专业工作流，通过自然语言输入生成代码，并访问不断增长的城市设计知识库。平台内置AI搜索功能，促进协作，使发现、分享和改进城市规划及问题解决的创新方法变得更加容易。
 
-**[Demo websit](https://cityflow.media.mit.edu/)**
+**[Demo website](https://cityflow.media.mit.edu/)**
 
 ## Key Features / 主要功能
 
