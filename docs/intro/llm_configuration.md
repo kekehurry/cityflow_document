@@ -8,11 +8,11 @@ author: kaihu
 
 # LLM Configuration / 大语言模型配置
 
-CityFlow provides three types of large language model assistants: the Global Assistant, the Module Assistant, and the Data Assistant, each serving different scenarios. The Global Assistant handles general tasks such as general Q&A, workflow retrieval (WIP), tool usage (WIP), etc. The Module Assistant aids in writing code for computational modules, with each module's assistant parameters set independently, allowing for tailored behavior as needed. The Data Assistant uses large language models for data processing, enabling natural language transformation of the Data Assistant into various processors.
+CityFlow provides three types of large language MODEL assistants: the Global Assistant, the Module Assistant, and the Data Assistant, each serving different scenarios. The Global Assistant handles general tasks such as general Q&A, workflow retrieval (WIP), tool usage (WIP), etc. The Module Assistant aids in writing code for computational modules, with each module's assistant parameters set independently, allowing for tailored behavior as needed. The Data Assistant uses large language MODELs for data processing, enabling natural language transformation of the Data Assistant into various processors.
 
 CityFlow 提供三种大语言模型助手，全局助手、模块助手和数据助手，分别服务于不同场景。全局助手负责通用任务的处理，如通用问答、工作流检索（WIP）、工具使用（WIP）等等；模块助手辅助计算模块代码的编写，每一个模块的助手参数设置都互相独立，因此可以根据需要配置模块的不同行为；数据助手以大语言模型进行数据处理，可以用自然语言将数据助手化身不同的处理器。
 
-All assistants share the same API key but support independent configuration of model parameters for fine-grained control.
+All assistants share the same API key but support independent configuration of MODEL parameters for fine-grained control.
 
 所有助手共享同一API密钥，但支持独立配置模型参数，实现精细化控制。
 
@@ -32,7 +32,7 @@ Services supporting the Openai API format can be used on the CityFlow platform. 
 
 - Paste the copied key in the Advanced Settings dropdown menu under INIT ENVIRONMENT on the Cityflow workflow interface. Note: All keys are only saved in the browser's local localStorage.
 
-- Click the ASSISTANT tab at the bottom of the main interface, then click the menu button in the upper right corner of the chat interface to enter the large language model assistant settings interface, and configure the base_url and model. For DeepSeek, fill in x for base_url and deepseek-chat for model. For other models, modify to the corresponding link and model name. The base_url and model set in the global assistant settings will be shared with other assistants to avoid repeated settings, but other assistants support individual modifications.
+- Click the ASSISTANT tab at the bottom of the main interface, then click the menu button in the upper right corner of the chat interface to enter the large language MODEL assistant settings interface, and configure the BASE_URL and MODEL. For DeepSeek, fill in x for BASE_URL and deepseek-chat for MODEL. For other MODELs, modify to the corresponding link and MODEL name. The BASE_URL and MODEL set in the global assistant settings will be shared with other assistants to avoid repeated settings, but other assistants support individual modifications.
 
 ### 获取API密钥
 
@@ -40,18 +40,31 @@ Services supporting the Openai API format can be used on the CityFlow platform. 
 - 登录后创建API密钥
 - 复制生成的密钥
 - 在Cityflow工作流界面，`INIT ENVIRONMENT` 下方的 `Advanced Settings` 下拉菜单中粘贴复制的密钥。注意：所有的密钥都只会保存在浏览器本地的 `localStorage`中。
-- 点击主界面下方的`ASSISTANT`标签，然后点击聊天界面右上方的菜单按钮，进入大语言模型助手设置界面，配置好`base_url` 和 `model`。以DeepSeek为例，这里`base_url`填入`https://api.deepseek.com`, `model`填入`deepseek-chat`。 如其他模型则修改为对应链接和模型名称。在全局助手设置的`base_url`和`model`会与其他助手共享，以避免重复设置，但是支持其他助手单独修改。
+- 点击主界面下方的`ASSISTANT`标签，然后点击聊天界面右上方的菜单按钮，进入大语言模型助手设置界面，配置好`BASE_URL` 和 `MODEL`。以DeepSeek为例，这里`BASE_URL`填入`https://api.deepseek.com`, `MODEL`填入`deepseek-chat`。 如其他模型则修改为对应链接和模型名称。在全局助手设置的`BASE_URL`和`MODEL`会与其他助手共享，以避免重复设置，但是支持其他助手单独修改。
 
-After completing the setup, you can use the large language model assistant to assist in completing tasks.
+After completing the setup, you can use the large language MODEL assistant to assist in completing tasks.
 
 设置完成之后，即可使用大语言模型助手辅助完成工作。
 
 ![llm_settings](assets/llm_settings.png)
 
+## 2. Using a Local Large Language Model / 使用本地大语言模型
 
-## 2. 详细参数设置 / Detailed Parameters
+You can also use a locally running large language model. We recommend Ollama. After installing the Ollama client from the official website, run the following command in the terminal to download the required model:
 
-In the upper right corner of the chat interface, there is a menu button. Clicking it will switch to the large language model parameter settings interface.
+你也可以使用本地运行的大语言模型，推荐使用 Ollama。在官网下载并安装 Ollama 客户端后，在终端运行以下命令下载所需模型：
+
+```
+ollama pull deepseek-r1:latest
+```
+Then, in the CityFlow platform, update `BASE_URL` to `http://localhost:11434/v1` and set the model name to the one you downloaded, such as `deepseek-r1:latest`.
+
+然后在CityFlow平台中将`BASE_URL`修改为 `http://localhost:11434/v1`,模型名称改为下载的模型，如`deepseek-r1:latest`即可。
+
+
+## 3.  Detailed Parameters / 详细参数设置
+
+In the upper right corner of the chat interface, there is a menu button. Clicking it will switch to the large language MODEL parameter settings interface.
 
 在聊天界面右上角，有一个菜单按钮，点击之后会切换到，大语言模型参数设置界面
 
@@ -76,7 +89,7 @@ In the upper right corner of the chat interface, there is a menu button. Clickin
 - presence_penalty: 控制话题新颖度（正值探索新主题）
 
 
-## 3. Assistant Types/ 助手类型详解
+## 4. Assistant Types/ 助手类型详解
 
 ### Global Assistant/ 全局助手
 
@@ -103,6 +116,13 @@ In the upper right corner of the chat interface, there is a menu button. Clickin
 - It is recommended to use json_object as the output structure for subsequent processing / 建议使用`json_object`作为输出结构以便后续处理
 
 ![data_ssistant](assets/data_assistant.gif)
+
+
+## 5. 代码自动补全(实验功能)/ Code Auto-Completion (Experimental Feature)
+
+ityFlow supports code auto-completion in the editor, though this feature is still experimental. You can enable or disable it in **Advanced Settings**.
+
+CityFlow支持在编辑器中自动补全代码，目前仍是实验功能，你可以在**Advanced Settings**选择开启或关闭功能。代码补全所需的大语言模型需要额外设置，以便使用与聊天模型不同的模型。设置方式与上文相同。。
 
 
 

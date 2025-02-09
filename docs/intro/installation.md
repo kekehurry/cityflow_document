@@ -55,8 +55,20 @@ docker run -d --name cityflow_platform `
 
 ### 2. Pre-download Dependency (Optional) / 预下载依赖（可选）
 
+The Docker container for the CityFlow platform will automatically download the latest version of the CityFlow Runner to execute Python and JavaScript code. Alternatively, you can download it manually:
+
+CityFlow 平台的 Docker 容器会自动下载最新版本的 CityFlow Runner 以执行 Python 和 JavaScript 代码。你也可以手动下载：
+
 ```bash
 docker pull ghcr.io/kekehurry/cityflow_runner:latest
+```
+
+The latest CityFlow Runner image includes only the minimal dependencies required for the CityFlow platform. For a more comprehensive environment, it is recommended to download the full version, which includes commonly used packages for urban research. You can also install the packages you need in the cityflow platform terminal later.
+
+最新的 CityFlow Runner 镜像仅包含 CityFlow 平台所需的最小依赖项。为了获得更完整的环境，建议下载完整版，其中包含城市研究中常用的软件包。你也可以之后在CityFlow 平台内安装你需要的依赖包。
+
+```bash
+docker pull ghcr.io/kekehurry/cityflow_runner:full
 ```
 
 ## 3. Troubleshooting / 常见问题
