@@ -23,7 +23,7 @@ module.exports = {
           position: 'left',
           label: 'Documents',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://cityflow.cn',
           label: 'CityFlow Platform',

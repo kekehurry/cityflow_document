@@ -71,6 +71,37 @@ The latest CityFlow Runner image includes only the minimal dependencies required
 docker pull ghcr.io/kekehurry/cityflow_runner:full
 ```
 
+### 3. Image pulling alternatives/镜像拉取替代方案
+
+If you encounter network problems downloading the `ghcr.io` image and you are in China, try using the Nanjing University Image acceleration.
+
+如果在中国下载`ghcr.io`镜像遇到网络问题，可尝试使用南京大学镜像加速：
+
+```bash
+docker pull ghcr.nju.edu.cn/kekehurry/cityflow_runner:full
+```
+Change the image repository name to `ghcr.io` when the download is complete. Or in the workflow setting interface, change the image name to Nanjing University Image.
+
+下载完成后将镜像仓库名称改为`ghcr.io`,或者在工作流设置界面，将镜像名称改为南京大学镜像。
+
+```bash
+docker image tag ghcr.nju.edu.cn/kekehurry/cityflow_runner:latest ghcr.io/kekehurry/cityflow_runner:latest
+
+docker image tag ghcr.nju.edu.cn/kekehurry/cityflow_runner:full ghcr.io/kekehurry/cityflow_runner:full
+```
+
+Pull and launch the cityflow platform using the Nanjing University image.
+
+使用南京大学镜像拉取并启动cityflow platform:
+
+```bash
+docker run -d --name cityflow_platform \
+  -p 3000:3000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v ${PWD}/temp:/cityflow_platform/cityflow_executor/code \
+  ghcr.nju.edu.cn/kekehurry/cityflow_platform:latest
+```
+
 ## 3. Troubleshooting / 常见问题
 
 ### Q1: Where is data stored?  / 数据存储在哪里？
