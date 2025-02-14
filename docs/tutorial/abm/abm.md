@@ -1,7 +1,7 @@
 ---
 slug: /tutorials/abm
-sidebar_position: 1
-title: Mesa Agent Based Model
+sidebar_position: 2
+title: Agent-based Model
 author: kaihu
 ---
 

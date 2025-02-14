@@ -5,11 +5,17 @@ title: Introduction
 author: kaihu
 ---
 
-# CityFlow Platform 👋
+# CityFlow Platform 👋 
+
+**To Create Smarter, More Sustainable Cities / 创造更智能、更可持续的城市**
 
 CityFlow is a low-code, AI-enhanced platform designed to help urban analysts, city planners, and researchers develop, evaluate, and visualize urban solutions with minimal coding effort. By integrating an AI-powered module builder and a collaborative case-based system, CityFlow enables users to create custom workflows, generate code through natural language inputs, and access a growing repository of urban design knowledge. With built-in AI search capabilities, the platform fosters collaboration, making it easier to discover, share, and refine innovative approaches to urban planning and problem-solving.
 
 CityFlow 是一个低代码、AI辅助的城市设计平台，旨在帮助城市分析师、城市规划者和研究人员以最少的编码工作开发、评估和可视化城市解决方案。通过集成AI驱动的模块构建器和基于案例的协作系统，CityFlow 使用户能够创建自定义专业工作流，通过自然语言输入生成代码，并访问不断增长的城市设计知识库。平台内置AI搜索功能，促进协作，使发现、分享和改进城市规划及问题解决的创新方法变得更加容易。
+
+
+
+
 
 **[Demo website](https://cityflow.media.mit.edu/)**
 
@@ -33,9 +39,9 @@ CityFlow 集成了AI驱动的模块构建器，帮助用户编写自定义的Pyt
 
 ### An Open Platform for Urban Scientists / 面向城市科学家的开放平台
 
-CityFlow integrates AI-powered search engines into urban workflows, creating a platform that fosters collaboration among experts, city planners, and urban scientists. It enables users to search for and share research findings, workflows, and case studies, contributing to a continuously evolving database of urban design solutions. By facilitating the exchange of knowledge and best practices, CityFlow drives innovation in urban development, making it easier to replicate or adapt successful approaches for more effective city planning and management.
+CityFlow integrates AI-powered search engines into urban workflows, creating a platform that fosters collaboration among experts, city planners, and urban scientists. It enables users to search for and share research findings, workflows, and case studies, contributing to a continuously evolving database of urban design solutions. By facilitating the exchange of knowledge and best practices, CityFlow drives innovation in urban development, making it easier to replicate or adapt successful approaches for more effective and sustainable city planning and management.
 
-CityFlow 将AI搜索引擎集成到城市工作流中，创建了一个促进专家、城市规划者和城市科学家之间协作的平台。它使用户能够搜索和分享研究成果、工作流和案例研究，为不断发展的城市设计解决方案数据库做出贡献。通过促进知识和最佳实践的交流，CityFlow 推动了城市发展的创新，使复制或调整成功方法以进行更有效的城市规划和管理变得更加容易。
+CityFlow 将AI搜索引擎集成到城市工作流中，创建了一个促进专家、城市规划者和城市科学家之间协作的平台。它使用户能够搜索和分享研究成果、工作流和案例研究，为不断发展的城市设计解决方案数据库做出贡献。通过促进知识和最佳实践的交流，CityFlow使学习和应用成功规划经验，进行更有效的城市规划和管理变得更加容易，以辅助推动城市规划方法的可持续发展与创新。
 
 ![community](assets/community.gif)
 

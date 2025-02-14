@@ -5,13 +5,13 @@ title: System Architecture
 author: kaihu
 ---
 
-# System Architecture/系统架构
-
-![system architecture](assets/architecture.png)
+# System Architecture / 系统架构
 
 The system architecture of the CityFlow platform consists of three core components: **CityFlow Database**, **CityFlow Workstation**, and **CityFlow Executor**. The CityFlow Database is a graph-based database that stores workflow information as nodes and edges, while CityFlow Workstation serves as the main user interface, providing an intuitive, modular programming environment. CityFlow Executor is responsible for managing the execution containers of workflows.
 
 CityFlow Platform 的系统架构由三个核心部分组成：**CityFlow Database**，**CityFlow Workstation** 和 **CityFlow Executor**。其中CityFlow Database是一个图结构数据库，以节点和边的方式存储工作流信息，CityFlow WorkStation是主要的用户界面，提供了易于使用的图形化、模块化编程界面，CityFlow Executor是负责管理工作流运行容器的组件。
+
+![system architecture](assets/architecture.png)
 
 ## CityFlow Workstation
 
@@ -56,3 +56,10 @@ To ensure flexibility and security during code execution, CityFlow Executor uses
 
 为了确保代码运行的灵活性与安全性，CityFlow Executor采用Docker容器运行不同的工作流，一个工作流的不同模块共用一个**CityFlow Runner**容器环境，用户可以在初始化工作流时，使用yml格式配置不同的代码环境，并且每个CityFlow Runner容器都内置了一个临时数据库，以方便不同模块之间共享数据。CityFlow Runner的生命周期由CityFlow Executor共同管理，当用户UI界面断开连接超过一段时间时，CityFlow Executor将会自动销毁相应的CityFlow Runner容器。同时基于容器化运行的方式也为之后实现无图形界面（headless mode）直接调用工作流预留了升级空间。
 
+
+
+## CityFlow Community
+
+The CityFlow community is built around the concept of open collaboration and is committed to achieving the core goal of the CityFlow platform - **to create smarter, more sustainable cities**. By sharing research results, workflows, and case studies, community members contribute to a growing library of urban design solutions. By facilitating the exchange of knowledge and best practices, CityFlow makes it easier to learn and apply successful planning practices for more effective urban planning and management to help drive sustainable development and innovation in urban planning methods.
+
+CityFlow社区围绕开放协作的理念建立，致力于实现CityFlow平台的核心目标——**创造更智能、更可持续的城市**。通过共享研究成果、工作流和案例研究，社区成员为不断发展的城市设计解决方案库做出贡献。通过促进知识和最佳实践的交流，CityFlow使学习和应用成功规划经验，进行更有效的城市规划和管理变得更加容易，以辅助推动城市规划方法的可持续发展与创新。
