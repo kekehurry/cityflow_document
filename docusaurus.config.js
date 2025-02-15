@@ -9,6 +9,19 @@ module.exports = {
   projectName: 'cityflow.github.io',
   deploymentBranch: 'gh-pages',
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      zh: {
+        label: '中文',
+      },
+    },
+  },
+
   themeConfig: {
     navbar: {
       title: 'CityFlow',
@@ -24,6 +37,10 @@ module.exports = {
           label: 'Documents',
         },
         // { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://cityflow.cn',
           label: 'CityFlow Platform',

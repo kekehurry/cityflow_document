@@ -1,0 +1,10 @@
+{
+  "copyright": {
+    "message": "CityFlow, Kai Hu, 2025",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of footer logo"
+  }
+}

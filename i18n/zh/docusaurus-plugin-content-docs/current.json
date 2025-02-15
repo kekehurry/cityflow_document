@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documents.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar documents"
+  },
+  "sidebar.documents.category.Workflow": {
+    "message": "Workflow",
+    "description": "The label for category Workflow in sidebar documents"
+  },
+  "sidebar.documents.category.Module": {
+    "message": "Module",
+    "description": "The label for category Module in sidebar documents"
+  },
+  "sidebar.documents.category.Module Builder": {
+    "message": "Module Builder",
+    "description": "The label for category Module Builder in sidebar documents"
+  },
+  "sidebar.documents.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar documents"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 slug: /module/annotation
-sidebar_position: 3
+sidebar_position: 4
 title: Annotation Modules
 author: kaihu
 ---
