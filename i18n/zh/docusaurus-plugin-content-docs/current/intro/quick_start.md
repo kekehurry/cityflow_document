@@ -42,6 +42,11 @@ CityFlow平台的基础操作，主要依赖于鼠标拖拽与连接：
 
 ![step_1](assets/quick_start/step_1.png)
 
+更多自定义模块代码的编写，详见：
+
+- [Python模块](/module/builder/python)
+- [React模块](/module/builder/react)
+
 ## 使用AI创造一个模块
 
 ⚠️注意：使用AI功能需要参考[AI Assistant](/workflow/assistant)页面说明，设置好API KEY。

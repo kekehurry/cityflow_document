@@ -44,6 +44,11 @@ The basic operations of the CityFlow platform mainly rely on mouse dragging and 
 
 ![step_1](assets/quick_start/step_1.png)
 
+More information about building custom modules：
+
+- [Python Module](/module/builder/python)
+- [React Module](/module/builder/react)
+
 ## Create a Module Using AI
 
 ⚠️Note: To use the AI function, refer to the [AI Assistant](/workflow/assistant) page for instructions on setting up the API KEY.
