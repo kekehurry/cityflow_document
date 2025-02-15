@@ -86,6 +86,4 @@ CityFlow平台中的几种工作流保存和分享方法：
 > **Tips：**
 > 在分享工作流时可以在工作流URL中添加参数以实现不同的分享效果：
 > - `demo=true` : 将直接打开工作流展示界面。如`https://cityflow.cn/flow?id=aba3472421b9bea8f0347ee350dd7b34&demo=true`
-> - `embed=true` : 将工作流嵌入其他网页。如`https://cityflow.cn/flow?id=aba3472421b9bea8f0347ee350dd7b34&embed=true`。下面这个窗口便是工作流嵌入的效果👇：
-
-<iframe style={{width:100%, height:"400px"}} src="https://cityflow.cn/flow?id=aba3472421b9bea8f0347ee350dd7b34&embed=true" />
+> - `embed=true` : 将工作流嵌入其他网页。如`https://cityflow.cn/flow?id=aba3472421b9bea8f0347ee350dd7b34&embed=true`。

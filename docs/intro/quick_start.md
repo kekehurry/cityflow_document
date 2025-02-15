@@ -89,9 +89,3 @@ Several methods for saving and sharing workflows in the CityFlow platform:
 > When sharing a workflow, you can add parameters to the workflow URL to achieve different sharing effects:
 > - `demo=true`: Directly opens the workflow display interface. For example: `https://cityflow.media.mit.edu/flow?id=aba3472421b9bea8f0347ee350dd7b34&demo=true`
 > - `embed=true`: Embeds the workflow into another webpage. For example: `https://cityflow.media.mit.edu/flow?id=aba3472421b9bea8f0347ee350dd7b34&embed=true`. 
-
-The window below shows the result of embedding a workflow👇:
-
-
-<iframe style={{width:"100%", height:"400px"}} src="https://cityflow.media.mit.edu/flow?id=aba3472421b9bea8f0347ee350dd7b34&embed=true" />
-
