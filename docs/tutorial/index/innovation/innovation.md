@@ -7,7 +7,7 @@ author: mianji & kaihu
 
 # Academic Information Dissemination Potential
 
-Demo Workflow: [JiMian-Academic Information Dissemination Potential](https://cityflow.media.mit.edu/flow?id=ff22cf2eb4e0ea6dd580800365c9cd25)
+Demo Workflow: [JiMian-Academic Information Dissemination Potential](https://cityflow.media.mit.edu/flow?id=3591be07cf527fc1ba74b5695d47530b)
 
 **Academic Information Dissemination Potential** is a quantitative analysis tool proposed by Dr. Ji Mian from South China University of Technology, based on information dissemination theory. It calculates the dissemination potential of academic research information in different campus spatial layouts, aiming to provide layout decision support for promoting interdisciplinary innovation in campus planning. This tool measures the reach and heterogeneity of academic information dissemination by calculating the traversal potential of different disciplinary research buildings along scholars' daily commuting routes, further assessing the academic information dissemination indicators of the overall spatial layout scheme.
 
@@ -60,7 +60,7 @@ pip:
   - ezdxf
 ```
 
-Next, create a new Python module called `DXF2GEOJSON`, which is used for reading. The complete code can be viewed in the code editor of the `DXF2GEOJSON` module within the [workflow](https://cityflow.media.mit.edu/flow?id=ff22cf2eb4e0ea6dd580800365c9cd25).
+Next, create a new Python module called `DXF2GEOJSON`, which is used for reading. The complete code can be viewed in the code editor of the `DXF2GEOJSON` module within the [workflow](https://cityflow.media.mit.edu/flow?id=3591be07cf527fc1ba74b5695d47530b).
 
 ```python
 # entrypoint.py

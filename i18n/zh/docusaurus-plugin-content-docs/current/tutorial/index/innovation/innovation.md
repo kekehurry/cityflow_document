@@ -7,7 +7,7 @@ author: mianji & kaihu
 
 # 校园空间学术信息传播潜力
 
-本教程完整工作流：[纪绵-校园空间学术信息传播潜力](https://cityflow.cn/flow?id=ff22cf2eb4e0ea6dd580800365c9cd25)
+本教程完整工作流：[纪绵-校园空间学术信息传播潜力](https://cityflow.cn/flow?id=3591be07cf527fc1ba74b5695d47530b)
 
 **校园空间学术信息传播潜力**是华南理工大学纪绵博士所提出来的一种基于信息传播理论，计算不同校园空间布局中科研学术信息传播潜力的量化分析工具，以期为促进跨学科创新的校园规划提供布局决策辅助。该工具通过计算学者日常通勤路线中不同学科科研建筑的穿行潜力，衡量学术信息传播的到达率与异质性，以此进一步评估总体空间布局方案的学术信息传播指标。
 ![](assets/innocation_metrics.png)
@@ -53,7 +53,7 @@ $$ CH_i = \sum_{j=1}^{n-1} CH_{i-j} / (n-1) $$
 pip:
   - ezdxf
 ```
-然后新建一个`DXF2GEOJSON`的python模块，这是读取部分代码，完整代码可以打开[工作流](https://cityflow.cn/flow?id=ff22cf2eb4e0ea6dd580800365c9cd25)内`DXF2GEOJSON`模块的代码编辑器查看。
+然后新建一个`DXF2GEOJSON`的python模块，这是读取部分代码，完整代码可以打开[工作流](https://cityflow.cn/flow?id=3591be07cf527fc1ba74b5695d47530b)内`DXF2GEOJSON`模块的代码编辑器查看。
 ```python
 #entrypoint.py
 import ezdxf
