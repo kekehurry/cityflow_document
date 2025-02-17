@@ -6,6 +6,6 @@ author: kaihu
 ---
 
 
-# 评估指标
+# Urban Index
 
-- [校园空间学术信息传播潜力](/tutorials/index/innovation)
+- [Academic Information Dissemination Potential](/tutorials/index/innovation)

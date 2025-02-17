@@ -1,20 +1,20 @@
 ---
 slug: /tutorials/index/innovation
 sidebar_position: 4
-title: 校园空间学术信息传播潜力
+title: Academic Information Dissemination Potential
 author: mianji & kaihu 
 ---
 
-# Academic Information Dissemination Potential of Campus Spaces
+# Academic Information Dissemination Potential
 
-**Academic Information Dissemination Potential of Campus Spaces** is a quantitative analysis tool proposed by Dr. Ji Mian from South China University of Technology, based on information dissemination theory. It calculates the dissemination potential of academic research information in different campus spatial layouts, aiming to provide layout decision support for promoting interdisciplinary innovation in campus planning. This tool measures the reach and heterogeneity of academic information dissemination by calculating the traversal potential of different disciplinary research buildings along scholars' daily commuting routes, further assessing the academic information dissemination indicators of the overall spatial layout scheme.
+**Academic Information Dissemination Potential** is a quantitative analysis tool proposed by Dr. Ji Mian from South China University of Technology, based on information dissemination theory. It calculates the dissemination potential of academic research information in different campus spatial layouts, aiming to provide layout decision support for promoting interdisciplinary innovation in campus planning. This tool measures the reach and heterogeneity of academic information dissemination by calculating the traversal potential of different disciplinary research buildings along scholars' daily commuting routes, further assessing the academic information dissemination indicators of the overall spatial layout scheme.
 
 ![](assets/innocation_metrics.png)
 （Image created by JiMian）
 
 As shown in the figure above, the calculation formula for the potential of building $i$ being traversed by building $j$ is:
 
-<div style="text-align: center">
+<div style={{textAlign: "center"}}>
 
 $$ C_{H_i-j} = \sum_{n=1}^{n}(C_{j,i-k_n} \times Q_{i-k_n} \times W_j \times W_i) / n $$
 
@@ -29,7 +29,7 @@ $$ C_{H_i-j} = \sum_{n=1}^{n}(C_{j,i-k_n} \times Q_{i-k_n} \times W_j \times W_i
 
 Based on the above formula, the academic information dissemination volume of a certain research building refers to the average potential of daily paths from all other research buildings traversing that building, specifically defined as:
 
-<div style="text-align: center">
+<div style={{textAlign: "center"}}>
 
 $$ CH_i = \sum_{j=1}^{n-1} CH_{i-j} / (n-1) $$
 
