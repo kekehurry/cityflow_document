@@ -22,12 +22,13 @@ $$ C_{H_i-j} = \sum_{n=1}^{n}(C_{j,i-k_n} \times Q_{i-k_n} \times W_j \times W_i
 
 </div>
 
-> $C_{H_i-j}$ : Represents the potential of building i being traversed by building j; \
->$i$,$j$ : Represents building numbers; \
->$k_n$ : Represents the target points, including commuting starting points (dormitories, bus stations, parking lots, walking or cycling exits) and dining points, n represents the nth target point, n=1,2,3... \
->$C_{j,i-k_n}$ : Represents whether the shortest path from building i to target point k_n traverses building j, $C_{j,i-k_n}$=0 or 1. 0 represents not traversing, 1 represents traversing; \
->$Q_{i-k_n}$ : Represents the attraction weight of target point k_n to building i. According to the distance decay theory, the distance weight is equal to the inverse square of the distance. To achieve a comparison of schemes at different scales, it is necessary to standardize the distance, that is, to convert a certain distance into the ratio of that distance to the global maximum distance (the maximum value of the shortest path from each building to the destination). Therefore, $Q_{i-k_n} = 1 / (d_{i-k_n} / d_{\text{max}(i-k_n)})^2$, where $d_{i-k_n}$ is the shortest path distance between target point $k_n$ and building $i$; \
->$W_i$, $W_j$ : Represents the area weights of buildings $i$ and $j$, that is, the ratio of building area to the maximum area of all buildings, namely $W_i = S_i / S_{\text{max}}$, $W_j = S_j / S_{\text{max}}$, where $i$ is the destination building and $W_j$ is the information amount of the traversing building, with $j$ being the building being traversed.
+> - $C_{H_i-j}$ : Represents the potential of building i being traversed by building j; \
+> - $i$,$j$ : Represents building numbers; \
+> - $k_n$ : Represents the target points, including commuting starting points (dormitories, bus stations, parking lots, walking or cycling exits) and dining points, n represents the nth target point, n=1,2,3... \
+> - $C_{j,i-k_n}$ : Represents whether the shortest path from building i to target point $k_n$ traverses building j, $C_{j,i-k_n}$=0 or 1. 0 represents not traversing, 1 represents traversing; \
+> - $Q_{i-k_n}$ : Represents the attraction weight of target point k_n to building i. According to the distance decay theory, the distance weight is equal to the inverse square of the distance. To achieve a comparison of schemes at different scales, it is necessary to standardize the distance, that is, to convert a certain distance into the ratio of that distance to the global maximum distance (the maximum value of the shortest path from each building to the destination). Therefore, $Q_{i-k_n} = 1 / (d_{i-k_n} / d_{\text{max}(i-k_n)})^2$, where $d_{i-k_n}$ is the shortest path distance between target point $k_n$ and building $i$; \
+> - $W_i$, $W_j$ : Represents the area weights of buildings $i$ and $j$, that is, the ratio of building area to the maximum area of all buildings, namely $W_i = S_i / S_{\text{max}}$, $W_j = S_j / S_{\text{max}}$. Here, $i$ denotes the destination building, and $W_i$ is used to estimate the information content of the traversed building, while $j$ denotes the origin building, and $W_j$ is used to calculate the information content of the traversing building.
+
 
 Based on the above formula, the academic information dissemination volume of a certain research building refers to the average potential of daily paths from all other research buildings traversing that building, specifically defined as:
 
@@ -37,11 +38,11 @@ $$ CH_i = \sum_{j=1}^{n-1} CH_{i-j} / (n-1) $$
 
 </div>
 
-> $CH_i$ represents the academic information dissemination of building i \
-> $CH_{i-j}$ represents the potential for building $i$ to be passed through by building $j$ \
-> $j$ refers to the other buildings in the local group of $n$ research buildings, excluding $i$. \
-> $CH_i$ represents the academic information dissemination of a specific research building. \
-> For the overall academic information dissemination potential of a local campus space, the average academic information dissemination of all research buildings can be used as a measure.
+> - $CH_i$ represents the academic information dissemination of building i \
+> - $CH_{i-j}$ represents the potential for building $i$ to be passed through by building $j$ \
+> - $j$ refers to the other buildings in the local group of $n$ research buildings, excluding $i$. \
+> - $CH_i$ represents the academic information dissemination of a specific research building. \
+> - For the overall academic information dissemination potential of a local campus space, the average academic information dissemination of all research buildings can be used as a measure.
 
 The workflow for assessing the academic information dissemination potential in campus spaces can be divided into four parts: `Input Module`, `Path Finding Module`, `Index Calculation Module`, and `Visualization Module`:
 
