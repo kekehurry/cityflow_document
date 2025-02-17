@@ -1,7 +1,7 @@
 ---
 slug: /tutorials/abm
 sidebar_position: 2
-title: Agent-based Model
+title: 智能体代理仿真模型
 author: kaihu
 ---
 
