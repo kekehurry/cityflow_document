@@ -208,13 +208,14 @@ class Building:
         return
     
     # Calculate the frequency with which this building is crossed by another building
-    def check_cross(self, building):
+    def check_cross(self,building):
         for path in building.paths:
             for entrance in self.entrance:
                 if path.intersects(entrance):
                     self.cross_value.append({
-                        "source": building.id,
-                        "distance": path.length,
+                        "area_i": building.area,
+                        "area_j" : self.area,
+                        "distance" : path.length,
                     })
         return
 ```
@@ -258,8 +259,9 @@ for building in tqdm(buildings, "Calculating the weighted sum of crossing freque
         # Distance weight is the inverse of the squared normalized distance
         distance_weight = 1 / (value["distance"] / max_path_length) ** 2
         # Area weight is the ratio of the crossed building area to the maximum area
-        area_weight = building.area / max_area
-        weighted_value.append(distance_weight * area_weight * 1)
+        w_i = value["area_i"]/max_area
+        w_j = value["area_j"]/max_area
+        weighted_value.append(distance_weight*w_i*w_j)
     # Take the average value
     if len(weighted_value):
         building.weighted_value = np.mean(weighted_value)

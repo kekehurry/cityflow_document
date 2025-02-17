@@ -187,7 +187,7 @@ class Building:
                     intersections.append(intersection)
         self.entrance = intersections
         return
-    # 计算每栋建筑的日常通勤路径
+    # 寻找日常通行路径
     def find_paths(self,roads,targets):
         for entrance in self.entrance:
             for target in targets:
@@ -196,13 +196,14 @@ class Building:
                     self.paths.append(path)
                     roads.update_edge(path)
         return
-    # 计算该建筑被另一栋建筑穿行的频率
+    # 获取被其他建筑穿行路径
     def check_cross(self,building):
         for path in building.paths:
             for entrance in self.entrance:
                 if path.intersects(entrance):
                     self.cross_value.append({
-                        "source": building.id,
+                        "area_i": building.area,
+                        "area_j" : self.area,
                         "distance" : path.length,
                     })
         return
@@ -211,7 +212,6 @@ class Building:
 
 ``` python
 # 建立路网
-
 road_network = RoadNetwork(roads_df)
 
 buildings = []
@@ -235,8 +235,6 @@ for b in buildings:
 max_path_length = max([ p.length for p in all_paths])
 print("最大路径长度:", max_path_length)
 
-
-
 # 计算每栋建筑日常路径所穿行建筑
 for a in tqdm(buildings,"计算每栋建筑日常路径所穿行建筑"):
     for b in buildings:
@@ -249,11 +247,12 @@ for building in tqdm(buildings,"对所有建筑被穿行频率加权求和"):
     for value in building.cross_value:
         #距离权重为标准化距离平方的倒数
         distance_weight = 1/(value["distance"]/max_path_length)**2
-        #面积权重为被穿行建筑面积与最大面积比值
-        area_weight = building.area/max_area
-        weighted_value.append(distance_weight*area_weight*1)
+        #面积权重为建筑面积、被穿行建筑面积与最大面积比值
+        w_i = value["area_i"]/max_area
+        w_j = value["area_j"]/max_area
+        weighted_value.append(distance_weight*w_i*w_j)
     #取平均值
-    if len(weighted_value) :
+    if len(weighted_value):
         building.weighted_value = np.mean(weighted_value)
 ```
 
