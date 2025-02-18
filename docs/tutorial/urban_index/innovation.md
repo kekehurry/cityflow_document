@@ -1,5 +1,5 @@
 ---
-slug: /tutorials/index/innovation
+slug: /tutorials/urban_index/innovation
 sidebar_position: 4
 title: Academic Information Dissemination Potential
 author: mianji & kaihu 

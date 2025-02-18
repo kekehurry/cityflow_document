@@ -1,5 +1,5 @@
 ---
-slug: /tutorials/index/innovation
+slug: /tutorials/urban_index/innovation
 sidebar_position: 4
 title: 校园空间学术信息传播潜力
 author: mianji & kaihu 
