@@ -1,11 +1,11 @@
 ---
 slug: /tutorials/urban_simulation/mesa_abm
 sidebar_position: 1
-title: Agent-Based Simulation Model
+title: Agent-based Model
 author: kaihu
 ---
 
-# Agent-Based Simulation Model
+# Agent-based Model
 
 The complete workflow for this tutorial: [MIT Campus Simulation](https://cityflow.cn/flow?id=a9c1da66d5ace18c44f054b90af46460)
 
