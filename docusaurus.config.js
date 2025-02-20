@@ -23,6 +23,11 @@ module.exports = {
   },
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'CityFlow',
       logo: {
