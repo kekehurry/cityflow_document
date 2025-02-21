@@ -50,5 +50,3 @@ docker pull ghcr.io/kekehurry/cityflow_runner:latest
 # Acknowledgement
 
 CityFlow 最初是在我访问MIT访问期间构思和开发的。衷心感谢 MIT City Science在我开发CityFlow平台期间的支持和启发。也深深感谢我的导师团队华南理工大学 Design Future Lab在整个过程中的指导和鼓励。
-
-![cityscience](assets/CSxDFL.png)
