@@ -29,7 +29,27 @@ author: kaihu
 docker --version
 ```
 
-## 2. Quick Installation
+## 2. Quick Start with CityFlow Launcher
+
+After installing Docker, users of `Windows` and `MacOS (Apple Silicon)` can directly use the **CityFlow Launcher** to install the CityFlow platform. The installation steps are as follows:
+
+- Download the installation package for the corresponding platform from the [release](https://github.com/kekehurry/cityflow_platform/releases) and install it.
+
+- Open the CityFlow Launcher and select the `CityFlow Runner` and `CityFlow Platform` images. The different image versions are as follows:
+  - **CityFlow Runner**:
+    - `cityflow_runner:latest`: Contains the minimum dependencies required for the CityFlow platform. You can install different `python` and `npm` packages as needed.
+    - `cityflow_runner:full`: Contains commonly used software packages in urban research. **(Recommended)**
+    - `cityflow_runner:dev`: Development version, updated frequently. Developers can install this version to experience the latest features.
+  - **CityFlow Platform**:
+    - `cityflow_platform:latest`: The latest image of the CityFlow platform. **(Recommended)**
+    - `cityflow_platform:dev`: Development version, updated frequently. Developers can install this version to experience the latest features.
+  - **Nanjing University Accelerated Mirror**:
+    Users in Mainland China can choose the corresponding version of the Nanjing University accelerated mirror to speed up the download.
+
+- Click the `Start` button and wait for the download and installation to complete. Pulling the image may take some time depending on your network environment, so please be patient.
+
+
+## 3. Install using Docker (Alternatively)
 
 ### 1. Startup Command
 
@@ -113,6 +133,3 @@ Try different port mapping:
 Submit issues on GitHub: 
 
 https://github.com/kekehurry/cityflow_platform
-
-
-**Documentation: [Cityflow Document (WIP)](https://doc.cityflow.cn/)**
