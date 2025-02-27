@@ -15,7 +15,7 @@ CityFlow 使用户能够通过自然语言输入搜索和创建工作流程，�
 
 **🔥 更新: [CityFlow Launcher Released!](https://github.com/kekehurry/cityflow_platform/releases)** 
 
-相关链接: [Demo Website](https://cityflow.media.mit.edu/), [Documents](https://doc.cityflow.cn), [Community Workflows](https://community.cityflow.cn)
+相关链接: [Demo Website](https://cityflow.cn/), [Documents](https://doc.cityflow.cn), [Community Workflows](https://community.cityflow.cn)
 
 ## 主要功能
 

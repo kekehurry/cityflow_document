@@ -52,8 +52,8 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://arhukai.com',
-          label: 'Contact',
+          href: 'https://github.com/kekehurry/cityflow_platform',
+          label: 'Github',
           position: 'right',
         },
       ],
