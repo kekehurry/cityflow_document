@@ -7,7 +7,7 @@ author: kaihu
 
 # Agent-based Model
 
-The complete workflow for this tutorial: [MIT Campus Simulation](https://cityflow.cn/flow?id=a9c1da66d5ace18c44f054b90af46460)
+The complete workflow for this tutorial: [MIT Campus Simulation](https://cityflow.media.mit.edu/flow?id=5d6850cb5ddc1e0d6954e32847ecbf5e)
 
 Agent-based model (ABM) is a modeling approach based on individual behavior and interactions, used to simulate the dynamic evolution of complex systems. In urban simulation, ABM can be used to simulate interactions between elements such as people, traffic, and buildings in a city. By defining the behavioral rules of agents and their interactions with the environment, various phenomena in urban systems can be studied, such as commuting patterns, traffic congestion, and land-use changes. This tutorial will introduce how to build an agent-based urban simulation model on the CityFlow platform and provide detailed instructions on creating a simulation environment, writing agents, defining agent behaviors, customizing display outputs and data outputs, and running the simulation.
 
